@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>svelte transition error</title>
+
+        <script type="module" src="./dist/custom-button.js"></script>
+        <script type="module" src="./index.js"></script>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            html {
+                height: 100%;
+            }
+
+            body {
+                margin: 0;
+                display: grid;
+                grid-template-columns: 150px 1fr;
+                height: 100%;
+            }
+
+            body > * {
+                border: 1px solid;
+            }
+
+            li {
+                cursor: pointer;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li class="page1"><a href="#">page 1</a></li>
+                <li class="page2"><a href="#">page 2</a></li>
+            </ul>
+        </nav>
+        <main></main>
+    </body>
+</html>
